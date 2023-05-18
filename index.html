@@ -1,0 +1,857 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+
+    <script src="https://kit.fontawesome.com/a08d27df99.js" crossorigin="anonymous"></script>
+
+    
+    <link rel='stylesheet' type='text/css' href='https://www.x3dom.org/download/x3dom.css' />
+
+
+    <title>Coca-Cola Template</title>
+</head>
+<body>
+
+    <!--logo and navbar-->
+    <nav class="navbar sticky-top navbar-expand-sm navbar_coca_cola" id="navBarTheme">
+        <div class="container-fluid">
+            <!-- Brand -->
+            <div class="logo">
+                <a class="navbar-brand" href="#">
+                    <h1>1</h1>
+                    <h1>oca</h1>
+                    <h2>Cola</h2>
+                    <h3>Journey</h3>
+                    <p>Refreshing the world, one story at a time</p>
+                </a>
+            </div>
+            <!-- Collapse Navbar Menu Icon ---->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Links -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="swap('homePageMain');"> Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="swap('cokePage'); changeThemeCoke();"> Coca-Cola</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="swap('spritePage'); changeThemeSprite();">Sprite</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" onclick="swap('fantaPage'); changeThemeFanta();">Fanta</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="homePageMain" class="container-fluid main_contents">
+        <!-- Main body and 3D image !!!NEED TO IMRPOVE QUALITY OF IMAGES IN PHOTOSHOP!!!! CHECK PAGE 25 OF TUTORIAL-->
+        <div class="row">
+            <div class="col-sm-12">
+                <div id="main_3d_image">
+                    <div id="main_text" class="col-xs-12 col-sm-4">
+                        <h2>OUR BRANDS</h2>
+                        <h3>Explore our famous flavours</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Brand circles-->
+        <div class="row image_circles">
+            <div class="col-4 ">
+                <img class="rounded-circle" src="assets/images/cokeIcon.png" width="140" height="140" onclick="swap('cokePage')">
+                <h3>Coke</h3>
+            </div>
+            <div class="col-4">
+                <img class="rounded-circle" src="assets/images/spriteIcon.png" width="140" height="140" onclick="swap('spritePage')">
+                <h3>Sprite</h3>
+            </div>
+
+            <div class="col-4">
+                <img class="rounded-circle" src="assets/images/fantaIcon.png" width="140" height="140"onclick="swap('fantaPage')">
+                <h3>Fanta</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- Coca-cola-->
+            <div class="col-sm-4">
+                <div class="card">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/renderedImage.png" alt="3D_images">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">3D Models</h3>
+                        <p class="card-text">
+                            Founded in 1886 by pharmacist Dr John S Pemberton in Atlanta, Georgia, The Coca‑Cola Company is the world's leading manufacturer,
+                            marketer and distributor of non-alcoholic beverage concentrates and syrups, and produces nearly 400 brands. Discover three of our famous brands in our new 3D feature.
+
+                        </p>
+                        <a class="nav-link" href="#" onclick="swap('fantaPage'); changeThemeFanta();">VIEW MODELS</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Sprite-->
+            <div class="col-sm-4">
+                <div class="card" id="aboutPage">
+                    <a href="#">
+                        <img class="card-img-top img-fluid img-thumbnail" src="assets/images/newFlavours.png" alt="Sprite">
+                    </a>
+                    <div class="card-body">
+                        <h3 class="card-title">Click to view...</h3>
+                        <p class="card-text">
+                            This website was developed for Mobile Web 3D Applications at the University of Sussex.
+                       
+                        </p>
+                        <!-- Button trigger modal -->
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#statementModal" href="#statementModal">
+                            Originality Statement
+                        </button>
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#statementModal2" href="#statementModal2">
+                            References
+                        </button>
+                        <!-- Modal -->
+                        <div class="modal fade" id="statementModal" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">Statement Of Originality</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            These web pages are submitted as part requirement for the degree of Computing for Digital Media at the University of Sussex.
+                                            They are the product of my own labour except where indicated in the web page content.
+                                            These web pages or contents may be freely copied and distributed provided the source is acknowledged.
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal fade" id="statementModal2" tabindex="-1" aria-hidden="true">
+                            <div class="modal-dialog modal-dialog-centered">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">References</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>
+                                            All coke images and gallery icons: https://www.coca-cola.co.uk/marketing/launches-and-innovation/innovating-coca-cola-meet-the-new-flavours-and-drinks
+                                            <br /><br />
+                                            x3dom modules: https://www.x3dom.org/nodes/
+                                            <br /><br />
+                                            Font Awesome icons: https://fontawesome.com/docs/web/style/animate
+                                            <br /><br />
+                                            Bootstrap bundle https://getbootstrap.com/docs/5.3/getting-started/download/
+                                            <br /><br />
+                                            jQuery module (V3.6.3): https://releases.jquery.com/jquery/
+                                            <br /><br />
+                                            Popper module: https://popper.js.org/
+                                            <br /><br />
+                                            Nexa Font: https://www.dafont.com/nexa.font
+                                            <br /><br />
+                                            Fancybox (used in gallery):https://fancyapps.com/fancybox/getting-started/
+                                        </p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Appletiser Ad-->
+            <div class="col-sm-4">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="apple_ad">
+                            <video controls class="w-100">
+                                <source src="assets/Appletiser.mp4" type="video/mp4">
+                                This browser does not support the video tag.
+                            </video>
+                        </div>
+                        <h3 class="card-title">NEW Appletiser</h3>
+                        <p class="card-text">
+                            Try our sparkling apple drink today, available to purchase from our website.
+                            I created this advertisment during a Visual Effects module in 2022 at Sussex University.
+                        </p>
+                        </p>
+                        <a href="https://www.appletiser.com/en/home" class="btn btn-primary">
+                            Find out more...
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- coke page!!!!!!-->
+    <div id="cokePage" style="display:none;" class="container-fluid main_contents">
+        <div class="row">
+            <div class="col-2">
+                <img src="assets/images/lampLeft.png" class="spotlight-image-left img-fluid">
+            </div>
+            <div id="main_model_text" class="col-8">
+                <h2>BRING OUR BRANDS TO LIFE</h2>
+                <h3>
+
+                    <i class="fa-solid fa-cog fa-spin" style="--fa-animation-duration: 8s;" onclick="resetCoke()"></i>
+                    Click cog to reset
+                </h3>
+            </div>
+            <div class="col-2">
+                <img src="assets/images/lampRight.png" class="spotlight-image-right img-fluid">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #ff2e2e" onclick="swap('cokePage')">COCA-COLA bottle</button>
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #2bb333" onclick="swap('spritePage')">SPRITE can</button>
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #ff9626" onclick="swap('fantaPage')">FANTA Cup</button>
+                        <p>
+                            <br /><br />
+                            It was 1886, John Pemberton, an Atlanta pharmacist, was inspired by simple curiosity. One afternoon, he stirred up a fragrant, caramel-coloured liquid and, when it was done, the mixture was combined with carbonated water and sampled by customers who all agreed - this new drink was something special!
+                            At Coca‑Cola, we’re all about taste. Whether that’s the iconic flavour of Coca‑Cola original taste, or more taste-bud-tingling exotic variants on offer across the rest of our range. But with so many new flavours hitting store shelves, including our incredible range of innovative limited-edition Coca‑Cola Creations and WhatTheFanta drinks, we know it can be tricky to keep up.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="model-background-image">
+                        <div id="3d_modelCoke">
+                            <x3d id="model3dCoke">
+                                <scene>
+                                    <inline nameSpaceName="coke" mapDEFToID="true" url="assets/x3d/cokeBottle.x3d"></inline>
+                                </scene>
+                            </x3d>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 themed-grid-col1 my-card">
+                    <div class="card rounded-3 shadow-sm mt-0 ">
+                        <div class="card-header py-6">
+                            <h3> MODEL SETTINGS</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="settings-list">
+                                <li>
+                                    <h4><i class="fa-solid fa-clapperboard"></i> ANIMATION</h4>
+                                    <button class="my-btn" type="button" onclick="spinCoke()">Spin</button>
+                                    <button class="my-btn" type="button" onclick="stopSpin()">Stop</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4> <i class="fa-solid fa-lightbulb"></i>LIGHTS</h4>
+                                    <button type="button" class="my-btn" onclick="allLightsCoke()">All</button>
+                                    <button type="button" class="my-btn" onclick="spotlightCoke()">Spotlight</button>
+                                    <button type="button" class="my-btn" onclick="lightsOffCoke()">Off</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4><i class="fa-solid fa-video"></i> CAMERAS </h4>
+                                    <button type="button" class="my-btn" onclick="frontCamCoke()">Front</button>
+                                    <button type="button" class="my-btn" onclick="leftCamCoke()">Right</button>
+                                    <button type="button" class="my-btn" onclick="topCamCoke()">Top</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4><i class="fa-solid fa-wand-magic-sparkles"></i></i> RENDER </h4>
+                                    <button type="button" class="my-btn" onclick="modelPoly3()">Poly</button>
+                                    <button type="button" class="my-btn" onclick="modelWire3()">Wire</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>IMAGE GALLERY</h3>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/cokeIcon.png" data-fancybox="galleryCoke" data-caption="Coke">
+                        <img src="assets/images/cokeIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/dietCokeIcon.png" data-fancybox="galleryCoke" data-caption="Diet Coke">
+                        <img src="assets/images/dietCokeIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/spriteIcon.png" data-fancybox="galleryCoke" data-caption="Sprite">
+                        <img src="assets/images/spriteIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/fantaIcon" data-fancybox="galleryCoke" data-caption="Fanta">
+                        <img src="assets/images/fantaIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/drPepperIcon" data-fancybox="galleryCoke" data-caption="Dr Pepper">
+                        <img src="assets/images/drPepperIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/liltIcon" data-fancybox="galleryCoke" data-caption="Lilt">
+                        <img src="assets/images/liltIcon.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- SPRITE PAGE!!! -->
+    <div id="spritePage" style="display:none;" class="container-fluid main_contents">
+        <div class="row">
+            <div class="col-2">
+                <img src="assets/images/lampLeft.png" class="spotlight-image-left img-fluid">
+            </div>
+            <div id="main_model_text" class="col-8">
+                <h2>BRING OUR BRANDS TO LIFE</h2>
+                <h3>
+
+                    <i class="fa-solid fa-cog fa-spin" style="--fa-animation-duration: 8s;" onclick="resetSprite()"></i>
+                    Click cog to reset
+                </h3>
+            </div>
+            <div class="col-2">
+                <img src="assets/images/lampRight.png" class="spotlight-image-right img-fluid">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #ff2e2e" onclick="swap('cokePage')">COCA-COLA bottle</button>
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #2bb333" onclick="swap('spritePage')">SPRITE can</button>
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #ff9626" onclick="swap('fantaPage')">FANTA Cup</button>
+                        <p>
+                            <br /><br />
+                            Crisp, refreshing and clean-tasting, Sprite is a lemon and lime-flavoured soft drink. First introduced in 1961, crisp, refreshing, clean-tasting Sprite is now the world's leading lemon and lime flavoured soft drink and is sold in more than 190 different countries. Sprite Zero, part of our no sugar Zero range, offers the delicious lemon lime taste of Sprite without the sugar or calories.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="model-background-image">
+                        <div id="3d_modelSprite">
+                            <x3d id="model3dSprite">
+                                <scene>
+                                    <inline nameSpaceName="sprite" mapDEFToID="true" url="assets/x3d/spritecan3.x3d"></inline>
+                                </scene>
+                            </x3d>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 themed-grid-col1 my-card">
+                    <div class="card rounded-3 shadow-sm mt-0 ">
+                        <div class="card-header py-6">
+                            <h3> MODEL SETTINGS</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="settings-list">
+                                <li>
+                                    <h4><i class="fa-solid fa-clapperboard"></i> ANIMATION</h4>
+                                    <button class="my-btn" type="button" onclick="catwalk('sprite')">Catwalk</button>
+                                    <button class="my-btn" type="button" onclick="stopcatwalk('sprite')">Stop</button>
+
+                                </li>
+                                <br />
+                                <li>
+                                    <h4> <i class="fa-solid fa-lightbulb"></i>LIGHTS</h4>
+                                    <button type="button" class="my-btn" onclick="allLights('sprite')">All</button>
+                                    <button type="button" class="my-btn" onclick="spotLight('sprite')">Spotlight</button>
+                                    <button type="button" class="my-btn" onclick="lightsOff('sprite')">Off</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4><i class="fa-solid fa-video"></i> CAMERAS </h4>
+                                    <button type="button" class="my-btn" onclick="frontCam('sprite')">Front</button>
+                                    <button type="button" class="my-btn" onclick="topCam('sprite')">Top</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4><i class="fa-solid fa-wand-magic-sparkles"></i></i> RENDER </h4>
+                                    <button type="button" class="my-btn" onclick="modelPoly('sprite')">Poly</button>
+                                    <button type="button" class="my-btn" onclick="modelWire('sprite')">Wire</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>IMAGE GALLERY</h3>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/cokeIcon.png" data-fancybox="gallerySprite" data-caption="Coke">
+                        <img src="assets/images/cokeIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/dietCokeIcon.png" data-fancybox="gallerySprite" data-caption="Diet Coke">
+                        <img src="assets/images/dietCokeIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/spriteIcon.png" data-fancybox="gallerySprite" data-caption="Sprite">
+                        <img src="assets/images/spriteIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/fantaIcon" data-fancybox="gallerySprite" data-caption="Fanta">
+                        <img src="assets/images/fantaIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/drPepperIcon" data-fancybox="gallerySprite" data-caption="Dr Pepper">
+                        <img src="assets/images/drPepperIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/liltIcon" data-fancybox="gallerySprite" data-caption="Lilt">
+                        <img src="assets/images/liltIcon.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- FANTA PAGE!!! -->
+    <div id="fantaPage" style="display:none;" class="container-fluid main_contents">
+        <div class="row">
+            <div class="col-2">
+                <img src="assets/images/lampLeft.png" class="spotlight-image-left img-fluid">
+            </div>
+            <div id="main_model_text" class="col-8">
+                <h2>BRING OUR BRANDS TO LIFE</h2>
+                <h3 onclick="resetFanta()">
+
+                    <i class="fa-solid fa-cog fa-spin" style="--fa-animation-duration: 8s;" onclick="resetFanta()"></i>
+                    Click cog to reset
+                </h3>
+            </div>
+            <div class="col-2">
+                <br class="Apple-interchange-newline">
+                <img src="assets/images/lampRight.png" class="spotlight-image-right img-fluid">
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 col-xs-12">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #ff2e2e" onclick="swap('cokePage')">COCA-COLA bottle</button>
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #2bb333" onclick="swap('spritePage')">SPRITE can</button>
+                        <button type="button" id="my-model-btn" class="my-btn" style="background-color: #ff9626" onclick="swap('fantaPage')">FANTA Cup</button>
+                        <p>
+                            <br /><br />
+                            Ready to submit to the fizziest fizz? Treat your senses and try the irresistible taste our new take on a classic flavor. Bright, bubbly, instantly refreshing and great tasting. Fanta is made with 100% natural flavours and is caffeine free. Fanta is available in a variety of real fruit flavours.
+
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6 col-xs-12">
+                    <div id="model-background-image">
+                        <div id="3d_modelFanta">
+                            <x3d id="model3dFanta">
+                                <scene>
+                                    <inline nameSpaceName="fanta" mapDEFToID="true" url="assets/x3d/fantacup3.x3d"></inline>
+                                </scene>
+                            </x3d>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-xs-12 themed-grid-col1 my-card">
+                    <div class="card rounded-3 shadow-sm mt-0 ">
+                        <div class="card-header py-6">
+                            <h3> MODEL SETTINGS</h3>
+                        </div>
+                        <div class="card-body">
+                            <ul class="settings-list">
+                                <li>
+                                    <h4><i class="fa-solid fa-clapperboard"></i> ANIMATION</h4>
+                                    <button class="my-btn" type="button" onclick="animateFanta()">Jump</button>
+                                    <button class="my-btn" type="button" onclick="stopanimate()">Stop</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4> <i class="fa-solid fa-lightbulb"></i>LIGHTS</h4>
+                                    <button type="button" class="my-btn" onclick="allLightsFanta()">All</button>
+                                    <button type="button" class="my-btn" onclick="spotlightFanta()">Spotlight</button>
+                                    <button type="button" class="my-btn" onclick="lightsOffFanta()">Off</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4><i class="fa-solid fa-video"></i> CAMERAS </h4>
+                                    <button type="button" class="my-btn" onclick="frontCamFanta()">Front</button>
+                                    <button type="button" class="my-btn" onclick="leftCamFanta()">Right</button>
+                                    <button type="button" class="my-btn" onclick="topCamFanta()">Top</button>
+                                </li>
+                                <br />
+                                <li>
+                                    <h4><i class="fa-solid fa-wand-magic-sparkles"></i></i> RENDER </h4>
+                                    <button type="button" class="my-btn" onclick="modelPoly2()">Poly</button>
+                                    <button type="button" class="my-btn" onclick="modelWire2()">Wire</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <h3>IMAGE GALLERY</h3>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/cokeIcon.png" data-fancybox="galleryFanta" data-caption="Coke">
+                        <img src="assets/images/cokeIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/dietCokeIcon.png" data-fancybox="galleryFanta" data-caption="Diet Coke">
+                        <img src="assets/images/dietCokeIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/spriteIcon.png" data-fancybox="galleryFanta" data-caption="Sprite">
+                        <img src="assets/images/spriteIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/fantaIcon" data-fancybox="galleryFanta" data-caption="Fanta">
+                        <img src="assets/images/fantaIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/drPepperIcon" data-fancybox="galleryFanta" data-caption="Dr Pepper">
+                        <img src="assets/images/drPepperIcon.png" class="img-fluid">
+                    </a>
+                </div>
+                <div class="col-6 col-sm-4 col-lg-2 gallery-img">
+                    <a href="assets/images/liltIcon" data-fancybox="galleryFanta" data-caption="Lilt">
+                        <img src="assets/images/liltIcon.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <br>
+
+    <!-- 3D app footer-->
+    <nav class="navbar navbar-expand-sm footer" id="footer_theme">
+        <div class="container-fluid">
+            <div class="navbar-text float-left copyright">
+                <p> <span class="align-baseline"> &copy 2023 Mobile web 3D applications </span></p>
+            </div>
+            <div class="navbar-text float-right social">
+                <a href="#"> <i class="fab fa-facebook-square fa-2x" style="font-size:20px; color: rgb(35, 45, 228); padding: 5px;"></i></a>
+                <a href="#"> <i class="fab fa-twitter fa-2x" style="font-size:20px; color: rgb(114, 210, 255);padding: 5px;"></i></a>
+                <a href="#"> <i class="fab fa-google-plus fa-2x" style="font-size:20px; color: rgb(231, 92, 92);padding: 5px;"></i></a>
+                <a href="#"> <i class="fab fa-github-square fa-2x" style="font-size:20px; color: white;padding: 5px;"></i></a>
+            </div>
+        </div>
+    </nav>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <!--<script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script type='text/javascript' src='https://www.x3dom.org/download/x3dom.js'></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script src="js/jquery-3.6.3.js"></script>
+    <!--<script src="js/popper.min.js"></script> -->
+    <script src="js/bootstrap.js"></script>
+    <script type="text/javascript">
+
+            Fancybox.bind("[data-fancybox]", {
+
+            });
+
+            function swap(selected) {
+                document.getElementById('homePageMain').style.display = 'none';
+                document.getElementById('cokePage').style.display = 'none';
+                document.getElementById('spritePage').style.display = 'none';
+                document.getElementById('fantaPage').style.display = 'none';
+
+                $(document.getElementById(selected)).fadeIn();
+            }
+            function changeThemeSprite() {
+                document.getElementById('navBarTheme').style.backgroundColor = '#1dc244';
+                document.getElementById('footer_theme').style.backgroundColor = 'yellow';
+            }
+            function changeThemeFanta() {
+                document.getElementById('navBarTheme').style.backgroundColor = '#ff7700';
+                document.getElementById('footer_theme').style.backgroundColor = 'blue';
+
+            }
+            function changeThemeCoke() {
+                document.getElementById('navBarTheme').style.backgroundColor = '#c40000';
+                document.getElementById('footer_theme').style.backgroundColor = 'black';
+            }
+
+
+    </script>
+
+    <script type="text/javascript">
+
+            //animation methods for the 3d models
+
+            function catwalk(model)
+            {
+             animationCam(model);
+             document.getElementById(model+'__Timer').setAttribute("enabled", "true");
+
+            }
+            function stopcatwalk(model) {
+             document.getElementById(model+'__Timer').setAttribute("enabled", "false");
+             frontCam(model);
+            }
+            function animateFanta() {
+
+            document.getElementById('fanta__Timer').setAttribute("enabled", "true");
+
+            }
+           function stopanimate() {
+
+            document.getElementById('fanta__Timer').setAttribute("enabled", "false");
+
+            }
+            function spinCoke() {
+
+            document.getElementById('coke__Timer').setAttribute("enabled", "true");
+
+            }
+         function stopSpin() {
+
+            document.getElementById('coke__Timer').setAttribute("enabled", "false");
+
+            }
+
+            function spin(model) {
+                document.getElementById(model+'__Timer2').setAttribute("enabled", "true");
+            }
+
+            function frontCam(model) {
+                document.getElementById(model+'__SpriteCan').setAttribute("translation", "0 0 0");
+                document.getElementById(model+'__SpriteCan').setAttribute("rotation", "0 -1 0 3.5");
+                resetCams(model);
+                document.getElementById(model+'__View_CameraFront').setAttribute("set_bind", "true");
+            }
+
+            function topCam(model) {
+                stopcatwalk(model);
+                document.getElementById(model+'__SpriteCan').setAttribute("translation", "0 0 -500");
+                resetCams(model);
+                document.getElementById(model+'__View_CameraTop').setAttribute("set_bind", "true");
+
+            }
+
+            function animationCam(model) {
+                document.getElementById(model+'__SpriteCan').setAttribute("translation", "0 0 0");
+            document.getElementById(model+'__SpriteCan').setAttribute("rotation", "0 -1 0 3.5");
+                resetCams(model);
+                document.getElementById(model+'__View_CameraAnim').setAttribute("set_bind", "true");
+            }
+
+            function resetCams(model) {
+                document.getElementById(model+'__View_CameraFront').setAttribute("set_bind", "false");
+                document.getElementById(model+'__View_CameraTop').setAttribute("set_bind", "false");
+            }
+            function frontCamFanta() {
+                document.getElementById('fanta__View_CamFront').setAttribute("set_bind", "true");
+            }
+            function leftCamFanta() {
+                document.getElementById('fanta__View_CamLeftWide').setAttribute("set_bind", "true");
+            }
+            function topCamFanta() {
+                document.getElementById('fanta__View_CamTop').setAttribute("set_bind", "true");
+
+            }
+            function frontCamCoke() {
+                document.getElementById('coke__View_CamFront').setAttribute("set_bind", "true");
+            }
+            function leftCamCoke() {
+                document.getElementById('coke__View_CamSide').setAttribute("set_bind", "true");
+            }
+            function topCamCoke() {
+                document.getElementById('coke__View_CamTop').setAttribute("set_bind", "true");
+
+            }
+
+            var cokeModel = "poly";
+
+            function modelPoly3() {
+                var e = document.getElementById("model3dCoke");
+                if (cokeModel == "wire") {
+                    e.runtime.togglePoints(true);
+                }
+                cokeModel = "poly";
+            }
+
+            function modelWire3() {
+                var e = document.getElementById("model3dCoke");
+                if (cokeModel == "poly") {
+                    e.runtime.togglePoints(true);
+                    e.runtime.togglePoints(true);
+                }
+                cokeModel = "wire";
+        }
+
+            var spriteModel = "poly";
+
+            function modelPoly() {
+                var e = document.getElementById("model3dSprite");
+                if (spriteModel == "wire") {
+                    e.runtime.togglePoints(true);
+                }
+                spriteModel = "poly";
+            }
+
+            function modelWire() {
+                var e = document.getElementById("model3dSprite");
+                if (spriteModel == "poly") {
+                    e.runtime.togglePoints(true);
+                    e.runtime.togglePoints(true);
+                }
+                spriteModel = "wire";
+        }
+
+        var fantaModel = "poly";
+
+        function modelPoly2() {
+            var e = document.getElementById("model3dFanta");
+            if (fantaModel == "wire") {
+                e.runtime.togglePoints(true);
+            }
+            fantaModel = "poly";
+        }
+
+        function modelWire2() {
+            var e = document.getElementById("model3dFanta");
+            if (fantaModel == "poly") {
+                e.runtime.togglePoints(true);
+                e.runtime.togglePoints(true);
+            }
+            fantaModel = "wire";
+        }
+
+        function spotLight(model) {
+                    document.getElementById(model+'__LIGHT_LightFront').setAttribute("on", "true");
+                    document.getElementById(model+'__LIGHT_LightFront').setAttribute("intensity", "1");
+                    document.getElementById(model+'__LIGHT_LightTop').setAttribute("on", "false");
+                    document.getElementById(model+'__LIGHT_LightBottom').setAttribute("on", "false");
+                    document.getElementById(model+'__LIGHT_LightLeft').setAttribute("on", "false");
+                    document.getElementById(model+'__LIGHT_LightRight').setAttribute("on", "false");
+                    document.getElementById(model+'__LIGHT_LightBack').setAttribute("on", "false");
+            }
+                function allLights(model) {
+                    document.getElementById(model+'__LIGHT_LightFront').setAttribute("on", "true");
+                    document.getElementById(model+'__LIGHT_LightTop').setAttribute("on", "true");
+                    document.getElementById(model+'__LIGHT_LightBottom').setAttribute("on", "true");
+                    document.getElementById(model+'__LIGHT_LightLeft').setAttribute("on", "true");
+                    document.getElementById(model+'__LIGHT_LightRight').setAttribute("on", "true");
+                    document.getElementById(model+'__LIGHT_LightBack').setAttribute("on", "true");
+                    document.getElementById(model+'__LIGHT_LightFront').setAttribute("intensity", "0.65");
+            }
+                function lightsOff(model) {
+                    document.getElementById(model+"__LIGHT_LightFront").setAttribute("on", "false");
+                    document.getElementById(model+"__LIGHT_LightTop").setAttribute("on", "false");
+                    document.getElementById(model+"__LIGHT_LightBottom").setAttribute("on", "false");
+                    document.getElementById(model+"__LIGHT_LightLeft").setAttribute("on", "false");
+                    document.getElementById(model+"__LIGHT_LightRight").setAttribute("on", "false");
+                    document.getElementById(model+"__LIGHT_LightBack").setAttribute("on", "false");
+        }
+
+        function spotlightFanta() {
+            document.getElementById('fanta__LIGHT_LightFront').setAttribute("on", "true");
+            document.getElementById('fanta__LIGHT_LightFront').setAttribute("intensity", ".8");
+            document.getElementById('fanta__LIGHT_LightLeft').setAttribute("on", "false");
+            document.getElementById('fanta__LIGHT_LightRight').setAttribute("on", "false");
+            document.getElementById('fanta__LIGHT_LightBack').setAttribute("on", "false");
+        }
+        function allLightsFanta() {
+            document.getElementById('fanta__LIGHT_LightFront').setAttribute("on", "true");
+            document.getElementById('fanta__LIGHT_LightFront').setAttribute("intensity", "0.25");
+            document.getElementById('fanta__LIGHT_LightLeft').setAttribute("on", "true");
+            document.getElementById('fanta__LIGHT_LightRight').setAttribute("on", "true");
+            document.getElementById('fanta__LIGHT_LightBack').setAttribute("on", "true");
+        }
+        function lightsOffFanta() {
+            document.getElementById('fanta__LIGHT_LightFront').setAttribute("on", "false");
+            document.getElementById('fanta__LIGHT_LightLeft').setAttribute("on", "false");
+            document.getElementById('fanta__LIGHT_LightRight').setAttribute("on", "false");
+            document.getElementById('fanta__LIGHT_LightBack').setAttribute("on", "false");
+        }
+
+        function spotlightCoke() {
+            document.getElementById('coke__LIGHT_LightFront').setAttribute("on", "true");
+            document.getElementById('coke__LIGHT_LightFront').setAttribute("intensity", ".8");
+            document.getElementById('coke__LIGHT_LightLeft').setAttribute("on", "false");
+            document.getElementById('coke__LIGHT_LightRight').setAttribute("on", "false");
+            document.getElementById('coke__LIGHT_LightBack').setAttribute("on", "false");
+        }
+        function allLightsCoke() {
+            document.getElementById('coke__LIGHT_LightFront').setAttribute("on", "true");
+            document.getElementById('coke__LIGHT_LightFront').setAttribute("intensity", "0.5");
+            document.getElementById('coke__LIGHT_LightLeft').setAttribute("on", "true");
+            document.getElementById('coke__LIGHT_LightRight').setAttribute("on", "true");
+            document.getElementById('coke__LIGHT_LightBack').setAttribute("on", "true");
+        }
+        function lightsOffCoke() {
+            document.getElementById('coke__LIGHT_LightFront').setAttribute("on", "false");
+            document.getElementById('coke__LIGHT_LightLeft').setAttribute("on", "false");
+            document.getElementById('coke__LIGHT_LightRight').setAttribute("on", "false");
+            document.getElementById('coke__LIGHT_LightBack').setAttribute("on", "false");
+        }
+
+        function resetFanta() {
+            frontCamFanta();
+            modelPoly2();
+            stopanimate();
+            allLightsFanta();
+            document.getElementById('fanta__LIGHT_LightFront').setAttribute("intensity", "0.5");
+        }
+
+        function resetSprite() {
+            document.getElementById('sprite__Timer').setAttribute("enabled", "false");
+            modelPoly();
+            allLights(sprite);
+            frontCam(sprite);
+        }
+
+        function resetCoke() {
+        stopSpin();
+        frontCamCoke();
+        modelPoly3();
+        allLightsCoke();
+
+        }
+
+
+
+    </script>
+</body>
+    </html>

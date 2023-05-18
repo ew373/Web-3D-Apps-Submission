@@ -1,0 +1,687 @@
+/* Method to declare your own fonts */
+@font-face {
+    font-family: cocaColaFont;
+    src: url(../assets/fonts/loki_cola/LOKICOLA.TTF);
+}
+
+@font-face {
+    font-family: brandingFont;
+    src: url(../assets/fonts/nexa/Nexa-Heavy.ttf);
+}
+
+    p {
+        font-size: 12px;
+    }
+    h3{
+        font-family:brandingFont;
+    }
+
+#main_3d_image {
+    background-image: url(../assets/images/coke.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 160px;
+}
+
+#model-background-image {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    object-position: center;
+}
+.rounded-circle{
+    margin-top:10px;
+}
+
+x3d {
+    position: absolute;
+    top:25px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+#3d_modelSprite {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+#model3dFanta {
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%; 
+}
+
+#aboutPage img{
+height:200px;
+}
+
+#model3dCoke {
+
+ top:-40px;
+
+}
+
+.image_circles{
+    text-align:center;
+}
+.apple_ad {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover; 
+}
+
+
+#main_text {
+    float: center;
+    margin: 5%;
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+    #main_text h2 {
+        color: rgb(20, 11, 8);
+        font-size: 30px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-family: brandingFont;
+    }
+    #main_text h3 {
+        font-size: 15px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        font-family: brandingFont;
+        text-align: center;
+    }
+
+    #main_text p {
+        font-size: 12px;
+        margin: 0px;
+        line-height: 1.2;
+    }
+
+    .card {
+        border: 1px solid rgba(0,0,0,.125);
+        margin-top: 25px;
+        margin-bottom: 10px;
+        background-color: rgb(244, 241, 241);
+    }
+
+    body {
+        background-color: rgb(255, 255, 255);
+    }
+
+    .main_contents {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    p {
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    h1, h2, h4, h5, h6{
+        font-family: 'Oswald', sans-serif;
+    }
+
+    /* CSS rule to style the mobile logo */
+    .logo {
+        margin-top: 20px;
+    }
+
+    .logo h1 {
+        font-family: cocaColaFont; 
+        font-size: 31px;
+        margin: 0;
+        margin-top: -10px;
+        margin-bottom: -15px;
+        float: left;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 2px;
+    }
+
+    .logo h2 {
+        font-family: cocaColaFont;
+        font-size: 31px;
+        margin-top: -6px;
+        margin-bottom: -15px;
+        padding-top: 0px;
+        padding-left: 0px;
+        padding-right: 3px;
+        float: left;
+    }
+
+    .logo h3 {
+        font-size: 18px;
+        margin-top: 0px;
+        margin-bottom: -5px;
+        padding-top: 0px;
+        padding-left: 0px;
+        float: left;
+    }
+
+    .logo p {
+        font-size: 7px; 
+        margin-top: 23px; 
+        margin-bottom: 0px;
+        padding-top: 0px;
+        padding-left: 3px;
+    }
+
+    .navbar_coca_cola {
+        background-color: #c40000; /* Set navbar background color */
+        border-width: 0px;
+        min-height: 70px;
+    }
+    /* CSS rule to overwrite the navbar-brand font color
+    */
+    .navbar_coca_cola .navbar-brand {
+        color: rgb(255, 247, 247);
+    }
+
+        /* CSS rule to overwrite the navbar-brand font hover color
+    */
+    .navbar_coca_cola .navbar-brand:hover {
+        color: rgb(118, 88, 75);
+    }
+
+
+    /* NAVIGATION MENU
+    */
+    .navbar_coca_cola .navbar-nav > li > a {
+        color: white;
+    }
+
+    .navbar_coca_cola .navbar-nav .nav-item {
+        margin-top: 0px;
+    }
+        /* CSS rule to overwrite the bootstrap.css rules for setting the active 
+    font color and background colour
+    */
+    .navbar_coca_cola .navbar-nav .nav-item > .active,
+    .navbar_coca_cola .navbar-nav > .active > a:hover,
+    .navbar_coca_cola .navbar-nav > .active > a:focus {
+        color: #760003; /* Font color for active font */
+        background-color: #ffffff; /* Blue color for background */
+        border-radius: 3px;
+    }
+    /* A set of CSS rules to change the Bootstrap defaults for the menu link 
+    text color, hover, background, focus
+    */
+
+    /* CSS rule to overwrite the bootstrap.css text hover color on the navbar
+    */
+    .navbar_coca_cola .navbar-nav > li > a:hover,
+    .navbar_coca_cola .navbar-nav > li > a:focus {
+        color: rgb(118,88,75);
+    }
+    /* Let's style the dropdown menu
+        */
+    .dropdown-menu {
+        text-align: -webkit-left;
+        background-color: #b6e7f3;
+        margin-top: 20px; /* Experiment to move the dropdown menu down */
+    }
+
+    .dropdown-menu .dropdown-item {
+        color: #eb0025;
+    }
+
+    .dropdown-menu .dropdown-item:hover {
+        color: #030303;
+        background-color: #e98074;
+    }
+
+    .navbar_coca_cola .navbar-toggler {
+        outline: none !important;
+    }
+    /* CSS rule to style the footer */
+    .footer {
+        color: #030303;
+        background-color: #ff1111; /* Set navbar footer background color same as 
+        header */
+        height: 50px;
+       
+    }
+
+    .navbar-text > a {
+        font-size: 13px;
+    }
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+        text-decoration: none;
+    }
+
+    .copyright {
+        padding-top: 8px;
+    }
+
+    .social {
+        padding-top: 0px;
+    }
+
+
+    .settings-list {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    .card-header {
+        text-align: center;
+        padding: 20px;
+    }
+
+    .my-btn {
+        border-radius: 5px;
+        background-color: white;
+        border-color: black;
+        color: black;
+        border-width: 2px;
+        font-family: brandingFont;
+    }
+
+    .my-btn:hover {
+        background-color: #c40000;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .my-btn:active {
+        background-color: #c40000;
+        color: white;
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+    }
+
+    .models-list {
+        list-style-type: none;
+    }
+
+
+    #my-model-btn {
+        border-radius: 5px;
+        background-color: white;
+        border-color: black;
+        color: black;
+        border-width: 2px;
+        width: 100%;
+        padding: 15px;
+        font-family: brandingFont;
+        margin-bottom:5px;
+    }
+
+    #model-background-image {
+        background-image: url(../assets/images/redcarpet.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: auto;
+        margin-bottom: 10px;
+    }
+    #3d_model{
+        height:200px;
+    }
+
+    #main_model_text h2 {
+        color: rgb(20, 11, 8);
+        font-size: 23px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-family: brandingFont;
+    }
+
+    #main_model_text h3 {
+        font-size: 13px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        text-align: center;
+        font-family: brandingFont;
+    }
+    .gallery-img {
+        padding-right: 0px;
+        padding-bottom:10px;
+    }
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+    /* CSS rule to style the footer */
+    .footer {
+        background-color: #ff1111;
+        height: 60px;
+    }
+
+    #main_text h2 {
+        font-size: 45px;
+    }
+
+    .navbar-text > a {
+        font-size: 10px;
+    }
+
+    .navbar-text > p {
+        color: rgb(228, 75, 15);
+        font-size: 18px;
+    }
+
+    .copyright {
+        padding-top: 20px;
+    }
+
+    .social {
+        padding-top: 7px;
+    }
+
+    #main_model_text h2 {
+        font-size: 35px;
+        margin-top: 20px;
+    }
+
+    #main_model_text h3 {
+        font-size: 18px;
+        margin-top: 6px;
+        margin-bottom: 6px;
+    }
+
+
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+    }
+    #model-background-image {
+        height: 350px;
+    }
+
+    #model3dFanta {
+        width: auto;
+        height: auto;
+        max-width: 50%;
+        max-height: 50%;
+    }
+    #aboutPage img {
+        height: 115px;
+    }
+    }
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .footer {
+        background-color: #ff1111;
+        height: 60px;
+    }
+    #main_model_text h2 {
+        font-size: 45px;
+        margin-top: 20px;
+    }
+    #main_model_text h3 {
+        font-size: 21px;
+        margin-top: 7px;
+        margin-bottom: 7px;
+    }
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 12px;
+    }
+
+    #main_text h2 {
+        font-size: 60px;
+    }
+
+    x3d {
+        position: absolute;
+        top: 100px;
+
+    }
+
+    #model3dFanta {
+        top: 100px;
+        left:90px;
+    }
+
+    #aboutPage img {
+        height: 170px;
+    }
+}
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .footer {
+        background-color: #ff1111;
+        height: 60px;
+    }
+
+    #main_model_text h2 {
+        font-size: 55px;
+        margin-top: 25px;
+    }
+    #main_3d_image {
+        height: 350px;
+    }
+
+    #main_model_text h3 {
+        font-size: 24px;
+        margin-top: 8px;
+        margin-bottom: 8px;
+    }
+
+    #model-background-image {
+        width: 100%;
+
+        object-fit: cover;
+        object-position: center;
+    }
+    x3d {
+
+        top: 0px;
+
+    }
+
+    #aboutPage img {
+        height: 210px;
+    }
+    #main_text h2 {
+        font-size: 85px;
+    }
+}
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+    .footer {
+        background-color: #ff1111;
+        height: 60px;
+    }
+
+    #main_3d_image {
+        height: 400px;
+    }
+    #main_model_text h2 {
+        font-size: 65px;
+        margin-top: 30px;
+    }
+
+    #main_model_text h3 {
+        font-size: 26px;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 16px;
+    }
+
+    #3d_model {
+        position: relative;
+        width: 100%;
+        height: 0;
+        padding-bottom: 20.25%;
+    }
+
+    #model3dCoke {
+
+        width:80%;
+        height:80%;
+    }
+
+    #aboutPage img {
+        height: 280px;
+    }
+   
+}
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+    .logo h1 {
+        font-size: 40px;
+    }
+
+
+    .logo h2 {
+        font-size: 40px;
+    }
+
+    .logo h3 {
+        font-size: 25px;
+        margin-top: 2px;
+    }
+
+    .logo p {
+        font-size: 12px;
+        margin-top: 32px;
+    }
+
+    .footer {
+        background-color: #2f0a08;
+        height: 60px;
+    }
+
+    .navbar-text > p {
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+    }
+
+    .body {
+        background-color: rgb(244, 241, 241);
+    }
+
+    .main_contents {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+    #main_3d_image {
+        height: 400px;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+
+    #main_text h2 {
+        font-size: 110px;
+        margin-bottom: 5px;
+    }
+
+    #main_text h3 {
+        font-size: 25px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+    }
+
+    #main_text p {
+        font-size: 20px;
+        margin: 0px;
+    }
+
+    #main_model_text h2 {
+        font-size: 80px;
+        margin-top: 40px;
+    }
+
+    #main_model_text h3 {
+        font-size: 28px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+
+    .my-card {
+        padding-right: 30px;
+    }
+
+    #main_text {
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .spotlight-image-left {
+
+        max-width: 70%;
+        height: auto;
+        animation: rotate1 4s linear infinite;
+        margin-left: 50px;
+    }
+
+    .spotlight-image-right {
+   
+        max-width: 70%;
+        height: auto;
+        animation: rotate2 4s linear infinite;
+        margin-right: 50px;
+    }
+
+    #model-background-image {
+        width: 100%;
+        height: 470px;
+        object-fit: cover;
+        object-position: center;
+    }
+
+
+    #model3dFanta {
+        top: 60px;
+        left: 180px;
+    }
+
+    #model3dCoke {
+        top: -180px;
+        width: 80%;
+        height: 80%;
+    }
+
+
+    #aboutPage img {
+        height: 358px;
+    }
+
+}
+
+@keyframes rotate1 {
+    0% {
+        transform: rotate(20deg);
+    }
+
+    50% {
+        transform: rotate(-20deg);
+    }
+
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+@keyframes rotate2 {
+    0% {
+        transform: rotate(-20deg);
+    }
+
+    50% {
+        transform: rotate(20deg);
+    }
+
+    100% {
+        transform: rotate(-20deg);
+    }
+}
